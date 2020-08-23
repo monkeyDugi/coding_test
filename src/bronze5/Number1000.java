@@ -17,15 +17,21 @@ import java.util.StringTokenizer;
 public class Number1000 {
 
     public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        String line = sc.nextLine();
+//        StringTokenizer st = new StringTokenizer(line);
+//        int reuslt = 0;
+//        while (st.hasMoreTokens()) {
+//            reuslt += Integer.parseInt(st.nextToken());
+//        }
+//
+//        System.out.println(reuslt);
+
         Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        String line = sc.nextLine();
-        StringTokenizer st = new StringTokenizer(line);
-        int reuslt = 0;
-        while (st.hasMoreTokens()) {
-            reuslt += Integer.parseInt(st.nextToken());
-        }
-
-        System.out.println(reuslt);
+        System.out.println(a + b);
     }
 }
