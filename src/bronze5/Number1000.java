@@ -1,7 +1,5 @@
 package bronze5;
 
-import sun.security.jgss.GSSCaller;
-
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
