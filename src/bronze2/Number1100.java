@@ -31,33 +31,22 @@ public class Number1100 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[][] arr = new String[8][8];
+        char[][] arr = new char[8][8];
         int cnt = 0;
 
+        System.out.println(arr.length);
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = br.readLine().split("");
-
-            for (int j = 0; j < arr[i].length; j++) {
-                // 홀수행
-                if (i % 2 == 1) {
-                    // 훌수열(하얀칸)
-                    if (j % 2 == 1) {
-                        if ("F".equals(arr[i][j])) {
-                            cnt++;
-                        }
-                    }
-                    // 짝수행
-                } else {
-                    // 짝수행(하얀칸)
-                    if (j % 2 == 0) {
-                        if ("F".equals(arr[i][j])) {
-                            cnt++;
-                        }
-                    }
+            String input = br.readLine();
+            for (int j = 0; j < arr.length; j++) {
+                arr[i][j] = input.charAt(j);
+                System.out.print(arr[i][j]);
+                if ((i+j) % 2 == 0 && arr[i][j] == 'F') {
+                    cnt++;
                 }
             }
         }
 
         System.out.println(cnt);
+        System.out.println(arr.length);
     }
 }
